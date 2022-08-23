@@ -22,7 +22,7 @@ function Feed() {
       <div>
         {photos.map((photo: Photo) => {
             // return <div><img src={photo.photoUrl} /></div>
-            return <PhotoView key={photo._id} photo={photo} />
+            return <PhotoView key={photo._id} photo={photo} setPhotos={setPhotos} />
         })}
       </div>
     </>
